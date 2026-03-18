@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>annPlan</title>
+  <link rel="stylesheet" href="lib/styles.css">
+</head>
+<body>
+  <div class="header">
+    <div class="header-top">
+      <div><h1>annPlan</h1><div class="subtitle" id="hSub"></div></div>
+      <div class="header-right">
+        <div class="date" id="hDate"></div>
+        <div class="save-status">
+          <span class="save-dot saved" id="saveDot"></span>
+          <span id="saveText">로딩 중...</span>
+          <button class="save-btn" id="saveBtn" style="display:none">저장</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="stats-bar" id="stats"></div>
+  <div class="section">
+    <div class="section-title">&#9200; 다가오는 일정</div>
+    <div class="milestones-list" id="msList"></div>
+  </div>
+  <div class="section">
+    <div class="section-title">&#9473; 프로젝트 타임라인</div>
+    <div class="gantt-wrapper"><div id="gantt"></div></div>
+    <div class="legend" id="gLeg"></div>
+  </div>
+  <div class="section">
+    <div class="section-title">&#128269; 연차별 상세</div>
+    <div class="phase-detail-grid" id="phaseDetail"></div>
+  </div>
+  <div class="section">
+    <div class="section-title">&#128101; 팀 구성원</div>
+    <div id="membersSection"></div>
+  </div>
+  <div class="section">
+    <div class="section-title">&#128196; 논문 관리 <button class="add-paper-btn" id="addPaperBtn">+ 논문 추가</button></div>
+    <div id="papersSection"></div>
+  </div>
+  <div class="section">
+    <div class="section-title">&#128279; 과제간 작업 연결</div>
+    <div class="conn-table-wrap" id="connTable"></div>
+  </div>
+  <div class="section">
+    <div class="section-title">&#10687; 프로젝트 연결도</div>
+    <div class="net-wrap"><svg class="net-svg" id="netGraph"></svg></div>
+    <div class="conn-leg" id="cLeg"></div>
+  </div>
+  <div class="tooltip" id="tip"></div>
+  <script src="data.js"></script>
+  <script src="tracking.js"></script>
+  <script src="lib/app.js"></script>
+</body>
+</html>
