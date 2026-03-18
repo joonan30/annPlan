@@ -173,4 +173,4 @@ MIT License
 
 ## 만든이
 
-[Joonyoung Ahn](https://github.com/joonanlab) — 고려대학교
+[Joon An](https://github.com/joonan30) — 고려대학교
